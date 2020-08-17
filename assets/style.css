@@ -1,0 +1,183 @@
+:root {
+    --main-text-color: rgb(29, 29, 31);
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    /* font-family: "La Belle Aurore", cursive; */
+    font-size: 2em;
+    font-weight: 300;
+}
+.subheading {
+    font-weight: 100;
+    color: #635f5f;
+}
+body {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    color: rgb(29, 29, 31);
+    color: var(--main-text-color);
+}
+.c {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding: 0 10px;
+}
+
+/* Animations */
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* price card */
+.card {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.card-head,
+.card-p1,
+.card-p2,
+.card-p3 {
+    margin-bottom: 20px;
+}
+.card-p1 {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.card-p2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+.card-usp {
+    margin-bottom: 10px;
+}
+.card-p3 {
+    padding: 0 20px;
+}
+.fx {
+    text-align: center;
+}
+.card-num {
+    /* display: inline-block;
+    margin-right: 20px; */
+}
+.card-action {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.card-usp {
+    display: flex;
+}
+
+.usp-icon {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #126fa4;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkbtn {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    display: inline-flex;
+    cursor: pointer;
+    color: #666666;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    align-items: center;
+    padding: 15px;
+}
+.linkbtn:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+.linkbtn:active {
+    position: relative;
+    top: 1px;
+}
+
+.footer {
+    display: flex;
+    /*padding: 20px 0;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+.sep {
+    font-size: 1.5em;
+    color: silver;
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 15px 25px 15px;
+    color: var(--main-text-color);
+}
